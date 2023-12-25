@@ -1,0 +1,323 @@
+:root{
+    --bg-hero:#1f2937;
+    --bg-nav: rgba(35, 45, 61, 0.95);
+    --nav-hover: rgba(59, 77, 106, 0.95);
+    --button: hsl(215, 100%, 80%);
+    --bg-footer:var(--bg-hero);
+    --mts-hero: 3rem;
+    --fw-mt: 900;
+    --mt-color: #f9faf8;
+    --sts-hero: 1.125rem;
+    --st-color: #e5e7eb;
+    --hts-logo: 1.5rem;
+    --ht-color: #1f2937;
+    --button-color: #3882f6;
+    --bg-cta: rgb(107, 131, 171);
+    --hts-info: 2.25rem;
+    --htw-info: extra-bold;
+    --ht-info-color:#1f2937;
+    --bg-quote: #e5e7eb;
+    --qts-quote: 2.25rem;
+    --qt-fs: italic;
+    --qt-fw: light;
+    --qt-color: #1f2937;
+}
+*{
+    box-sizing:border-box;
+    /* outline: 2px solid red; */
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: monospace;
+}
+header{
+    background-color:var(--bg-nav);
+    z-index: 999;
+    position: fixed;
+    padding: .25rem 0;
+    margin: 0;
+    width:100%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    
+}
+
+header>.logo{
+    position: relative;
+    margin:0;
+}
+
+#logo-img{
+    background-color: ;
+    width: 3.525rem;
+    height: 100%;
+    object-fit: fill;
+    
+}
+header>.navbar{
+    /* background-color: yellowgreen; */
+    width: max-content;
+    position: relative;
+}
+
+.navbar .nav-link{
+    list-style-type:none;
+    position: relative;
+    /* background-color: violet; */
+    display: flex;
+    padding:0;
+    height: 100%;
+    align-items: center;
+}
+.navbar .nav-link li>a{
+    font-family: monospace;
+    font-weight: 700;
+    font-size: large;
+    text-decoration: none;
+    color: var(--st-color);
+    flex-wrap: nowrap;
+    text-transform: uppercase;
+    display:list-item;
+    padding: 1rem 3rem;
+    /* border: 2px solid red; */
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.nav-link li>a:hover{
+    cursor: pointer;
+    background-color: var(--nav-hover);
+    color: white;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+}
+.hero img{
+    object-fit:cover;
+    width: 100vw;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+}
+.hero>.btn{
+    position: absolute;
+    cursor: pointer;
+    top: 60%;
+    left:15%;
+    padding: 1rem;
+    border-radius: 15%;
+    border-color: none;
+    background-color: rgba(21, 52, 85, 0.7);
+    color: white;
+    /* border-bottom: #1F2937; */
+    font-family: monospace;
+    font-size: medium;
+    font-weight: 700;
+    
+}
+
+.hero>.btn:hover{
+    background-color: red;
+    color: var(--ht-color)
+    
+}
+.container{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    right: 10%;
+}
+.container>h2{
+    color: var(--ht-color);
+    font-size: var(--mts-hero);
+    font-weight: var(--fw-mt);
+    width: 100%;
+    margin-top: 3rem;
+    text-align: left;
+    text-transform: capitalize;
+}
+.container>p{
+    padding-top: 3rem;
+    width: 37rem;
+    font-size: var(--hts-logo);
+    
+}
+.heading-sec{
+    margin: 0;
+    padding: 1.5rem;
+    color: yellow;
+    background-color:#1f2937;
+    text-align: center;
+    width: 100vw;
+}
+.destination{
+    background-color:  #2d4568;
+    color: white;
+    width: 100vw;
+}
+.destination-up{
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+}
+.destination-up .locations-left-up{
+    width: 30%;
+    height: 100%;
+}
+.destination-up .info-left-up{
+    width: 20%;
+    text-align: center;
+    margin: 0 1rem;
+    border-radius: 5%;
+}
+.line{
+    border: 2px solid rgb(131, 144, 218);
+    margin: .5rem 6rem;
+}
+.trek{
+    text-align: left;
+    padding: 0.5rem 2rem;
+}
+.learn{
+    padding: .5rem;
+    margin-top:1.5rem; 
+    border-radius: 10%;
+    background-color: #1f2937;
+    cursor: pointer;
+}
+
+.learn>a{
+    text-decoration: none;
+    color: yellow;
+}
+.learn:hover{
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.destination-up>.locations-right-up{
+    width: 30%;
+    height: 100%;
+}
+.destination-up .info-right-up{
+    width: 20%;
+    text-align: center;
+    margin: 0 1rem;
+    border-radius: 5%;
+}
+.destination-up .locations-left-up>img{
+    width:100%;
+    float: left;
+    border-radius: 25% 10%;
+}
+.destination-up .locations-right-up>img{
+    width: 100%;
+    float: right;
+    border-radius: 10% 25%;
+}
+.destination-bottom{
+    display: flex;
+    /* border: 3px solid red; */
+    width: 100%;
+    padding: 2rem;
+}
+.destination-bottom .locations-left-bottom{
+    width: 30%;
+    height: 100%;
+}
+.destination-bottom .info-left-bottom{
+    width: 20%;
+    text-align: center;
+    border-radius: 5%;
+    margin: 0 1rem;
+    /* background-color: aliceblue; */
+}
+.destination-bottom>.locations-right-bottom{
+    width: 30%;
+    height: 100%;
+}
+.destination-bottom .info-right-bottom{
+    width: 20%;
+    text-align: center;
+    /* border: 2px solid red; */
+    border-radius: 5%;
+    margin: 0 1rem;
+}
+.destination-bottom .locations-left-bottom>img{
+    width:100%;
+    float: left;
+    border-radius: 25% 10%;
+}
+.destination-bottom .locations-right-bottom>img{
+    width: 100%;
+    float: right;
+    border-radius: 10% 25%;
+}
+.video-guide{
+    display: flex;
+    background-image: url("../pictures/daniel-leone-g30P1zcOzXo-unsplash.jpg");
+    background-position: center;
+    width: 100vw;
+    position: relative;
+    justify-content: space-between;
+}
+
+.video{
+    padding: 2rem 7rem;
+    position: relative;
+    width: 50vw;
+}
+.video-name>h3{
+    padding: 2rem;
+    font-size: xx-large;
+    text-align: center;
+
+}
+.quote{
+    width: 100vw;
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: 500;
+    padding: 4rem;
+    text-align: center;
+    background-color: var(--bg-quote);
+}
+.footer-cta{
+    background-color: var(--bg-cta);
+    display: flex;
+    width: 100vw;
+    
+    margin: 0;
+    padding: 3rem;
+    font-size: x-large;
+    font-weight: 500;
+    color: var(--mt-color);
+    justify-content: space-around;
+    
+}
+.cta-btn{
+    padding: 1rem;
+    border-radius: 10%;
+    font-size: large;
+    background-color: #1f2937;
+    cursor: pointer;
+    color: yellow;
+}
+.cta-btn:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.footer{
+    background-color:#1f2937;
+    text-align: center;
+    padding: 1rem;
+    color: yellow;
+    font-weight: 600;
+    width: 100vw;
+}
