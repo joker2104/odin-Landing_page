@@ -2,8 +2,6 @@
     --bg-hero:#1f2937;
     --bg-nav: rgba(35, 45, 61, 0.95);
     --nav-hover: rgba(59, 77, 106, 0.95);
-    --button: hsl(215, 100%, 80%);
-    --bg-footer:var(--bg-hero);
     --mts-hero: 3rem;
     --fw-mt: 900;
     --mt-color: #f9faf8;
@@ -13,14 +11,9 @@
     --ht-color: #1f2937;
     --button-color: #3882f6;
     --bg-cta: rgb(107, 131, 171);
-    --hts-info: 2.25rem;
-    --htw-info: extra-bold;
-    --ht-info-color:#1f2937;
     --bg-quote: #e5e7eb;
-    --qts-quote: 2.25rem;
-    --qt-fs: italic;
-    --qt-fw: light;
-    --qt-color: #1f2937;
+    
+    
 }
 *{
     box-sizing:border-box;
